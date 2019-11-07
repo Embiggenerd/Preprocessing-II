@@ -1,4 +1,21 @@
 // Mixins in here
-.dotted-border-btm(){
-    border-bottom: dashed 3px @navigation-border;
+.dashed-border-btm() {
+  border-bottom: dashed 3px @navigation-border;
+}
+
+.flex-custom(@dir, @just, @align) {
+  display: flex;
+  flex-direction: @dir;
+  justify-content: @just;
+  align-items: @align;
+}
+
+.btn-custom(@bg-color, @color, @width, @height) {
+    background:@bg-color;
+    color: @color;
+    width: @width;
+    height: @height;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    .flex-custom(row, center, center)
 }
