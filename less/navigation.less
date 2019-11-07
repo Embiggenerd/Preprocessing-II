@@ -1,1 +1,24 @@
 // Navigation Styles here
+nav {
+  height: 80px;
+  .flex-custom(column, space-around, center);
+  .dashed-border-btm();
+
+  h1 {
+    width: 145px;
+  }
+  .links {
+    width: 500px;
+    .flex-custom(row, space-around, center);
+
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 1.5rem;
+    }
+  } // .links
+
+  @media @tablet {
+    .flex-custom(row, space-around, center);
+  }
+} // nav
